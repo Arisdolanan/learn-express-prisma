@@ -1,0 +1,77 @@
+#https://www.prisma.io/docs/reference/api-reference/command-reference
+
+npm i -D prisma
+npm i @prisma/client
+npx prisma studio
+npx prisma migrate dev
+
+
+#graphql
+# get - product
+# query {
+#   getAllProduct{
+#     id
+#     name
+#     price
+#     createdAt
+#     updatedAt
+# 	}
+# }
+
+# add - product
+# mutation {
+#   addUser(name:"test", email:"test@gmail.com", phone:"1234567890"){
+#     name,
+#     email,
+#     phone
+#   }
+# }
+
+# update - product
+# mutation {
+#   updateUser(id: "63c5fb9dfa001952e66149d7", name:"test2", email:"test@gmail.com", phone:"1234567890") {
+#     id
+#   }
+# }
+
+# delete - product
+# mutation {
+#   deleteUser(id:"63c5fe18bf8ab58a8dd27487") {
+#     id
+#   }
+# }
+
+# get - category
+# query {
+#   getAllCategory{
+# 		name
+# 	}
+# }
+
+# get - category by id
+# query {
+#   getByIdCategory(id: 1){
+#     name
+#   }
+# }
+
+# add - category
+# mutation {
+#   createCategory(category:{name:"test"}){
+#     name,    
+#   }
+# }
+
+# update - category
+# mutation {
+#   updateUser(id: "63c5fb9dfa001952e66149d7", name:"test2", email:"test@gmail.com", phone:"1234567890") {
+#     id
+#   }
+# }
+
+# delete - category
+# mutation {
+#   deleteUser(id:"63c5fe18bf8ab58a8dd27487") {
+#     id
+#   }
+# }
